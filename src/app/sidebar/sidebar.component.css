@@ -1,0 +1,19 @@
+.sidebar {
+    position: absolute;
+    min-height: 93.4vh;
+    z-index: 1;
+    transition: left 0.16s ease-in-out;
+    min-width: 324px;
+}
+
+.sidebar-open {
+    left: 0px;
+}
+
+.sidebar-closed {
+    left: -324px;
+}
+
+.bg-darktheme-dp-2 {
+    background-color: #282828;
+}

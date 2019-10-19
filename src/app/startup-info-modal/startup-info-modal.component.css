@@ -1,0 +1,31 @@
+.bg-darktheme-dp-4 {
+    background-color: #252525;
+} 
+
+.text-classictheme-dp-4 {
+    color: #505050;
+    opacity: 1;
+}
+
+.text-darktheme-dp-4 {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.link-darktheme-dp-4 {
+    color: #3399ff;
+}
+
+.list-darktheme {
+    list-style: none;
+}
+
+.list-darktheme li::before {
+    content: "\2022";
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}

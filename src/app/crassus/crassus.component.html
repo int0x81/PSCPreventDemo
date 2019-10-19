@@ -1,0 +1,9 @@
+<div [ngClass]="smDevice ? 'flex-column' : ''"  class="d-flex">
+    <div [ngClass]="darkMode ? 'bg-darktheme-dp-1' : 'border'" class="info-element d-flex shadow ml-4 mt-4 mr-4 mb-3">
+        <app-predict-info class="flex-fill" style="min-width: 420px;"></app-predict-info>
+    </div>
+    <div [ngClass]="darkMode ? 'bg-darktheme-dp-1' : 'border'" class="info-element flex-fill shadow ml-4 mt-4 mr-4 mb-3">
+        <app-option-bar></app-option-bar>
+        <app-portstay-table></app-portstay-table>
+    </div>
+</div>

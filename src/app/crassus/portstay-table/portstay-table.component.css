@@ -1,0 +1,21 @@
+.table-row-selected {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0099ee;
+    box-shadow: 0 0 14px #0099ee;
+}
+
+.text-darktheme-dp-1 {
+    color: #FFFFFF;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* .text-darktheme-dp-1 thead tbody tr th td {
+    color: #FFFFFF;
+    opacity: 0.8;
+} */
+
+.zea-prime {
+    color: #0099ee;
+}

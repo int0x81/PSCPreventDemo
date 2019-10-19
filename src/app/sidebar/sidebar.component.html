@@ -1,0 +1,8 @@
+<nav [ngClass]="[darkMode ? 'bg-darktheme-dp-2' : 'shadow bg-white', sidebarOpen ? 'sidebar-open' : 'sidebar-closed']" class="border-right sidebar">
+    <div [ngClass]="darkMode ? 'text-white' : ''" class="text-center pt-4">
+        <h4>Select AI</h4>
+    </div>
+    <ul class="nav flex-column ml-3 mt-4 mr-3">
+        <ng-template mlmodel-directive></ng-template>
+    </ul>
+</nav>

@@ -1,0 +1,9 @@
+<div [ngClass]="[darkMode ? 'dark-mode-bg' : '', blurApp ? 'start-up-mode' : '']" class="w-100"  style="min-height: 100vh;">
+    <app-navbar></app-navbar>
+    <app-sidebar></app-sidebar>
+    <div class="d-flex justify-content-between">
+        <div class="flex-fill">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

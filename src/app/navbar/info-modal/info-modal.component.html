@@ -1,0 +1,73 @@
+<div [ngClass]="darkMode ? 'bg-darktheme-dp-4': ''" class="pr-5 pl-5 pt-3 pb-1">
+  <div class="d-flex">
+    <h2 [ngClass]="darkMode ? 'text-darktheme-dp-4': 'text-classictheme-dp-4'" class="display-4" style="font-weight: 750;">PSC Prevent</h2>
+    <!-- the following input is needed to hide the autofocus placed by ngbBootstrap -->
+    <input style="visibility: hidden; width: 0px;">
+  </div>
+  <br>
+  <p [ngClass]="darkMode ? 'text-darktheme-dp-4': 'text-classictheme-dp-4'">
+    PSC Prevent is a risk management plattform which purpose is to support you preventing failing PSCs. It makes high usage
+    of machine learning algorithms to generate its predictions. Please note that this plattform is still under development
+    and its results should be used with caution.
+  </p>
+  <br>
+  <!-- <p [ngClass]="darkMode ? 'text-darktheme-dp-4': 'text-classictheme-dp-4'"><b>Note:</b> This is experimental software! Also the AI-training models used by this app are still beeing developed. Use with caution ;)
+  </p>
+  <br> -->
+  <h4 [ngClass]="darkMode ? 'text-darktheme-dp-4': 'text-classictheme-dp-4'">Curious about machine learning?</h4>
+  <ul [ngClass]="darkMode ? 'list-darktheme': ''">
+    <li class="nav-item">
+      <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://www.mathworks.com/discovery/machine-learning.html" target="_blank">What is Machine Learning</a>
+    </li>
+    <!-- <li class="nav-item">
+        <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://youtube.com/" target="_blank">Example of real world use case</a>
+    </li> -->
+  </ul>
+  <br>
+  <h4 [ngClass]="darkMode ? 'text-darktheme-dp-4': 'text-classictheme-dp-4'">Used technologies</h4>
+  <ul [ngClass]="darkMode ? 'list-darktheme': ''">
+    <li>
+      <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://angular.io/" target="_blank">Angular</a>
+    </li>
+    <li>
+      <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+    </li>
+    <li>
+      <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://animejs.com/" target="_blank">Anime.js</a>
+    </li>
+    <li>
+      <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.0" target="_blank">ASP.NET CORE 3.0</a>
+    </li>
+    <li>
+      <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet" target="_blank">ML.NET</a>
+    </li>
+  </ul>
+  <!-- <div class="d-flex" style="font-size: 14px;">
+    <p [ngClass]="darkMode ? 'text-darktheme-dp-4': 'text-classictheme-dp-4'">Icons made by</p>
+    <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" class="ml-2" href="https://www.flaticon.com/authors/dave-gandy">Dave Gandy</a>
+  </div> -->
+  <br>
+  <h4 [ngClass]="darkMode ? 'text-darktheme-dp-4': 'text-classictheme-dp-4'" class="mb-4">Project Responsibilities</h4>
+  <div class="d-flex align-items-center mt-4 mb-4">
+    <div>
+      <img src="../../../assets/fink.jpg" alt="avatar" style="width: 60px; height:60px; border-radius: 50%">
+    </div>
+    <div class="d-flex flex-column align-items-start justify-content-center pl-4">
+      <h5 [ngClass]="darkMode ? 'text-darktheme-dp-4': ''">Laurence Douglas Fink</h5>
+      <p [ngClass]="darkMode ? 'text-darktheme-dp-4': ''" class="m-0">Quality Assurance Manager</p>
+    </div>
+  </div>
+  <div class="d-flex align-items-center mt-4 mb-3">
+      <div>
+        <img src="../../../assets/IMG_20180715_115230.jpg" alt="avatar" style="width: 60px; height:60px; border-radius: 50%">
+      </div>
+      <div class="d-flex flex-column align-items-start justify-content-center pl-4">
+        <h5 [ngClass]="darkMode ? 'text-darktheme-dp-4': ''">Professor Dr. Snens</h5>
+        <p [ngClass]="darkMode ? 'text-darktheme-dp-4': ''" class="m-0">Lead Machine Learning Model Designer</p>
+      </div>
+  </div>
+  <br>
+  <div class="d-flex justify-content-center mt-3">
+    <p [ngClass]="darkMode ? 'text-darktheme-dp-4': ''" class="mr-2">© 2019</p> <a [ngClass]="darkMode ? 'link-darktheme-dp-4': 'link'" href="https://zea-ship.com" target="_blank">ZEABORN ShipManagement GmbH</a>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.ml-model-card {
+    background-image: url("../../../assets/ml_visualization.png");
+    background-position: center;
+    background-size: cover;
+    height: 140px;
+    cursor: pointer;
+    border: 4px solid;
+    border-radius: 14px;
+    transition: opacity .25s ease-in-out;
+    z-index: 2;
+
+    box-shadow: none;
+    border-color: #ffffff;
+    opacity: 0.6; 
+}
+
+.ml-model-card:hover {
+    opacity: 1;
+}
+
+.ml-model-card-selected {
+    border-color: #0099ee;
+    box-shadow: 0 0 20px #0099ee;
+    opacity: 1;
+}
+
+.info-point {
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.info-point path {
+    transition: fill 0.25s ease-in-out
+}
+
+.info-point:hover path {
+    fill: #0099ee;
+}

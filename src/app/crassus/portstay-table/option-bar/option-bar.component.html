@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-start m-2">
+  <div class="m-2">
+    <p [ngClass]="darkMode ? 'text-darktheme' : 'text-classictheme'" class="mb-2 ml-1" style="font-weight: 600;">Vessel</p>
+    <app-selector></app-selector>
+  </div>
+  <div class="m-2 ml-5">
+    <p [ngClass]="darkMode ? 'text-darktheme' : 'text-classictheme'" class="mb-2" style="font-weight: 600;">Show ongoing stays</p>
+    <div>
+      <input [ngClass]="darkMode ? 'input-darktheme' : 'input-classictheme'" class="mt-2" type="checkbox" [checked]="showOngoingPortstays" (click)="toggleShowOngoingPortStays()">
+    </div>
+  </div>
+</div>

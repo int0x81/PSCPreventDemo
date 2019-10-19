@@ -1,0 +1,27 @@
+<table class="table table-hover mb-0">
+    <thead>
+      <tr>
+        <th style="border-style: none;" class="border-top-0" [ngClass]="darkMode ? 'text-darktheme-dp-1' : ''" scope="col">Stay</th>
+        <th style="border-style: none;" class="border-top-0" [ngClass]="darkMode ? 'text-darktheme-dp-1' : ''" scope="col">Vessel</th>
+        <th style="border-style: none;" class="border-top-0" [ngClass]="darkMode ? 'text-darktheme-dp-1' : ''" scope="col">Location</th>
+        <th style="border-style: none;" class="border-top-0" [ngClass]="darkMode ? 'text-darktheme-dp-1' : ''" scope="col">Prediction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let entry of tableEntries">
+        <tr [ngClass]="entry.selected ? 'table-row-selected' : ''" (click)="selectEntry(entry)">
+          <th [ngClass]="darkMode ? 'text-darktheme-dp-1' : ''" scope="row">{{entry.ps.timeOfArrival | date: 'dd LLL'}} - {{entry.ps.timeOfDeparture | date: 'dd LLL'}}</th>
+          <td [ngClass]="darkMode ? 'text-darktheme-dp-1' : ''">{{entry.ps.shipName}}</td>
+          <td [ngClass]="darkMode ? 'text-darktheme-dp-1' : ''">{{entry.ps.portName}}</td>
+          <td>
+            <div *ngIf="entry.prediction == null" class="spinner-border zea-prime" style="width:20px; height: 20px" role="status">
+                <span class="sr-only"></span>
+            </div>
+            <span *ngIf="entry.prediction != null && entry.prediction.probability < 50" class="badge badge-pill badge-success">Passing</span>
+            <span *ngIf="entry.prediction != null && entry.prediction.probability >= 50 && entry.prediction.predictedNumberOfDeficiencies == 0" class="badge badge-pill badge-warning">Risky</span>
+            <span *ngIf="entry.prediction != null && entry.prediction.probability >= 50 && entry.prediction.predictedNumberOfDeficiencies > 0" class="badge badge-pill badge-danger">Control</span>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>

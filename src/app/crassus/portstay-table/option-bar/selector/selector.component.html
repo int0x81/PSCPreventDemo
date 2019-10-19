@@ -1,0 +1,5 @@
+<div [ngClass]="[darkTheme ? 'selector-dark-theme' : 'selector-classic-theme', collapsed ? 'selector-collapsed' : 'selector-expanded']" class="selector">
+  <ul class="list-unstyled">
+    <li *ngFor="let ship of ships" (click)="onSelectorClick(ship)">{{ship.name}}</li>
+  </ul>
+</div>

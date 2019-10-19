@@ -1,0 +1,7 @@
+.dark-mode-bg {
+    background-color: #121212;
+}
+
+.start-up-mode {
+    filter: blur(8px);
+}
