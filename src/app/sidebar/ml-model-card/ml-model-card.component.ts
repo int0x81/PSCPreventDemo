@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, AfterViewInit, OnDestroy } from '@angular/core';
-import { MLModel } from 'src/app/models/MLmodel';
+import { MLModel } from 'src/app/models/mlmodel';
 import { GlobalEventService } from 'src/app/services/implementations/globalevent.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';

@@ -1,4 +1,4 @@
-import { MLModel } from '../models/MLmodel';
+import { MLModel } from '../models/mlmodel';
 
 export interface MLModelServiceDefinition {
 

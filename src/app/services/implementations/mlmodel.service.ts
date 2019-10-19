@@ -1,5 +1,5 @@
 import { MLModelServiceDefinition } from '../mlmodel.service.def';
-import { MLModel } from 'src/app/models/MLmodel';
+import { MLModel } from 'src/app/models/mlmodel';
 
 export class MLModelService implements MLModelServiceDefinition {
 

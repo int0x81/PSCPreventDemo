@@ -1,5 +1,5 @@
 import { Subject } from 'rxjs';
-import { MLModel } from 'src/app/models/MLmodel';
+import { MLModel } from 'src/app/models/mlmodel';
 
 export class GlobalEventService {
 

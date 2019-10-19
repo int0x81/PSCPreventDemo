@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ComponentFactoryResolver, OnDestroy, AfterViewInit } from '@angular/core';
 import { MLModelServiceDefinition } from '../services/mlmodel.service.def';
 import { MlModelMock } from '../services/mocks/mlmodel.service.mock';
-import { MLModel } from '../models/MLmodel';
+import { MLModel } from '../models/mlmodel';
 import { GlobalEventService } from '../services/implementations/globalevent.service';
 import { MlModelDirective } from './mlmodel.directive';
 import { MlModelCardComponent } from './ml-model-card/ml-model-card.component';
