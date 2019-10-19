@@ -104,8 +104,8 @@ export class PortStayMock implements PortStayServiceDefinition {
         let psc_01: PortStay = {
 
             scheduleId: 17539287,
-            shipId: 3,
-            shipName: "ZEA Kurt",
+            shipId: 1,
+            shipName: "MS Ulrike",
             timeOfArrival: dateFrom_01,//.toLocaleDateString(),
             timeOfDeparture: dateUntil_01,//.toLocaleDateString(),
             portName: "Dubai"

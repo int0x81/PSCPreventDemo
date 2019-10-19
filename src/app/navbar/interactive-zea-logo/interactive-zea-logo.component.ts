@@ -45,59 +45,69 @@ export class InteractiveZeaLogoComponent implements AfterViewInit {
 
     if(this.mouseOverLogo) {
 
-      //transform bar one
-      anime({
-        targets: this.barOne,
-        easing: this.transitionEasing,
-        duration: this.transitionDuration,
-        d: 'M0,3.324 l36.888,0 l0,7.157 l-36.888,0 l0,-7.157 Z'
-      });
-
-      //transform bar two
-      anime({
-        targets: this.barTwo ,
-        easing: this.transitionEasing,
-        duration: this.transitionDuration,
-        d: 'M36.888 17.56 c0,0 0,0 0 7.157 l -36.888 0 c 0,0 0,0 0,-7.157 l 36.888 0 Z'
-      });
-
-      //transform bar three
-      anime({
-        targets: this.barThree,
-        easing: this.transitionEasing,
-        duration: this.transitionDuration,
-        d: 'M0,38.03 l36.888,0 l0,-7.157 l-36.888,0 l0,7.157 Z'
-      });
+      this.transformLogoToNavIcon();
     }
     else {
 
-      //transform bar one to original state
-      anime({
-        targets: this.barOne,
-        easing: this.transitionEasing,
-        duration: this.transitionDuration,
-        d: 'M0,3.324 l36.888,0 l0,10.157 l-36.888,0 l0,-10.157 Z'
-      });
-
-      //transform bar two to original state
-      anime({
-        targets: this.barTwo,
-        easing: this.transitionEasing,
-        duration: this.transitionDuration,
-        d: 'M36.888,15.56 c0,5.64 -4.508,10.156 -10.085,10.156 l-26.803,0 c0,-5.641 4.507,-10.156 10.085,-10.156 l26.803,0 Z'
-      });
-      
-      //transform bar three to original state
-      anime({
-        targets: this.barThree,
-        easing: this.transitionEasing,
-        duration: this.transitionDuration,
-        d: 'M0,38.03 l36.888,0 l0,-10.157 l-36.888,0 l0,10.157 Z'
-      });
+      this.transformLogoToOriginalState();
     }
   }
 
-  onCompanyLogoClick() {
+  private transformLogoToNavIcon() {
+
+    //transform bar one
+    anime({
+      targets: this.barOne,
+      easing: this.transitionEasing,
+      duration: this.transitionDuration,
+      d: 'M0,3.324 l36.888,0 l0,7.157 l-36.888,0 l0,-7.157 Z'
+    });
+
+    //transform bar two
+    anime({
+      targets: this.barTwo ,
+      easing: this.transitionEasing,
+      duration: this.transitionDuration,
+      d: 'M36.888 17.56 c0,0 0,0 0 7.157 l -36.888 0 c 0,0 0,0 0,-7.157 l 36.888 0 Z'
+    });
+
+    //transform bar three
+    anime({
+      targets: this.barThree,
+      easing: this.transitionEasing,
+      duration: this.transitionDuration,
+      d: 'M0,38.03 l36.888,0 l0,-7.157 l-36.888,0 l0,7.157 Z'
+    });
+  }
+
+  private transformLogoToOriginalState() {
+
+    //transform bar one to original state
+    anime({
+      targets: this.barOne,
+      easing: this.transitionEasing,
+      duration: this.transitionDuration,
+      d: 'M0,3.324 l36.888,0 l0,10.157 l-36.888,0 l0,-10.157 Z'
+    });
+
+    //transform bar two to original state
+    anime({
+      targets: this.barTwo,
+      easing: this.transitionEasing,
+      duration: this.transitionDuration,
+      d: 'M36.888,15.56 c0,5.64 -4.508,10.156 -10.085,10.156 l-26.803,0 c0,-5.641 4.507,-10.156 10.085,-10.156 l26.803,0 Z'
+    });
+    
+    //transform bar three to original state
+    anime({
+      targets: this.barThree,
+      easing: this.transitionEasing,
+      duration: this.transitionDuration,
+      d: 'M0,38.03 l36.888,0 l0,-10.157 l-36.888,0 l0,10.157 Z'
+    });
+  }
+
+  private onCompanyLogoClick() {
 
     let cubicBezier: string = "cubic-bezier(0, .95, .13, 1.03)";
 
@@ -109,6 +119,9 @@ export class InteractiveZeaLogoComponent implements AfterViewInit {
       this.companyLogo.style.transform = "rotate(0deg)";
       this.companyLogo.style.transition = "all 0.2s";
       this.companyLogo.style.transitionTimingFunction = cubicBezier;
+
+      //needed to mobile optimization
+      this.transformLogoToOriginalState();
     }
 
     this.isLogoFlipped = !this.isLogoFlipped;

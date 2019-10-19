@@ -34,11 +34,11 @@ export class ShipMock implements ShipServiceDefinition {
             image: ""
         }
 
-        let ship_03: Ship = {
-            id: 3,
-            name: "ZEA Kurt",
-            image: ""
-        }
+        // let ship_03: Ship = {
+        //     id: 3,
+        //     name: "ZEA Kurt",
+        //     image: ""
+        // }
 
         let ship_04: Ship = {
             id: 4,
@@ -72,7 +72,7 @@ export class ShipMock implements ShipServiceDefinition {
 
         await this.ships.setItem(ship_01.id.toString(), ship_01);
         await this.ships.setItem(ship_02.id.toString(), ship_02);
-        await this.ships.setItem(ship_03.id.toString(), ship_03);
+        // await this.ships.setItem(ship_03.id.toString(), ship_03);
         await this.ships.setItem(ship_04.id.toString(), ship_04);
         await this.ships.setItem(ship_05.id.toString(), ship_05);
         // await this.ships.setItem(ship_06.id.toString(), ship_06);

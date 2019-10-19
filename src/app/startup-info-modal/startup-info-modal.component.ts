@@ -23,11 +23,12 @@ export class StartupInfoModalComponent implements OnInit, OnDestroy {
   ngOnInit() {}
 
   closeStartupModal() {
-    this.globalEventService.hideStartupInfoSubject.next();
+    
     this.modal.close();
   }
 
   ngOnDestroy() {
+    this.globalEventService.hideStartupInfoSubject.next();
     this.darkModeSubscription.unsubscribe();
   }
 }
