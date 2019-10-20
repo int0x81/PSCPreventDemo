@@ -11,7 +11,7 @@ export class MlModelMock implements MLModelServiceDefinition {
             created: new Date("2019-09-27"),
             name: "Crassus",
             status: "",
-            description: "Predicts the chance of a PSC beeing performed using machine learning",
+            description: "Predicts the chance of a PSC beeing performed using machine learning for all upcoming portstays of our fleet.",
             class: "Binary classification",
             technology: "SdcaLogisticRegression",
             selected: false
@@ -29,7 +29,7 @@ export class MlModelMock implements MLModelServiceDefinition {
             created: new Date('2019-10-27'),
             name: 'Atratinus',
             status: "development",
-            description: "Provides you with a heatmap of PSCs worldwide",
+            description: "States a risk factor for each port. Higher bars means higher risk of a PSC beeing performed.",
             class: "Data Visualization",
             technology: "Googles WebGL Globe",
             selected: false

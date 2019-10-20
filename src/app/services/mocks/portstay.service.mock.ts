@@ -21,93 +21,78 @@ export class PortStayMock implements PortStayServiceDefinition {
 
         let today = new Date();
 
-        let dateFrom_01: Date = new Date();
-        dateFrom_01.setDate(today.getDate() + 1);
-        let dateUntil_01: Date = new Date();
-        dateUntil_01.setDate(today.getDate() + 2);
-
-        let dateFrom_02: Date = new Date();
-        dateFrom_02.setDate(today.getDate() + 3);
-        let dateUntil_02: Date = new Date();
-        dateUntil_02.setDate(today.getDate() + 5);
-
-        let dateFrom_03: Date = new Date();
-        dateFrom_03.setDate(today.getDate() + 4);
-        let dateUntil_03: Date = new Date();
-        dateUntil_03.setDate(today.getDate() + 6);
-
-        let dateFrom_04: Date = new Date();
-        dateFrom_04.setDate(today.getDate() + 4);
-        let dateUntil_04: Date = new Date();
-        dateUntil_04.setDate(today.getDate() + 6);
-
-        let dateFrom_05: Date = new Date();
-        dateFrom_05.setDate(today.getDate() + 5);
-        let dateUntil_05: Date = new Date();
-        dateUntil_05.setDate(today.getDate() + 6);
-
-        let dateFrom_06: Date = new Date();
-        dateFrom_06.setDate(today.getDate() + 8);
-        let dateUntil_06: Date = new Date();
-        dateUntil_06.setDate(today.getDate() + 9);
-
-        let dateFrom_07: Date = new Date();
-        dateFrom_07.setDate(today.getDate() + 10);
-        let dateUntil_07: Date = new Date();
-        dateUntil_07.setDate(today.getDate() + 12);
-
-        let dateFrom_08: Date = new Date();
-        dateFrom_08.setDate(today.getDate() + 12);
-        let dateUntil_08: Date = new Date();
-        dateUntil_08.setDate(today.getDate() + 18);
-
-        let dateFrom_09: Date = new Date();
-        dateFrom_09.setDate(today.getDate() + 13);
-        let dateUntil_09: Date = new Date();
-        dateUntil_09.setDate(today.getDate() + 14);
-
-        let dateFrom_10: Date = new Date();
-        dateFrom_10.setDate(today.getDate() + 15);
-        let dateUntil_10: Date = new Date();
-        dateUntil_10.setDate(today.getDate() + 16);
-
-        let dateFrom_11: Date = new Date();
-        dateFrom_11.setDate(today.getDate() + 15);
-        let dateUntil_11: Date = new Date();
-        dateUntil_11.setDate(today.getDate() + 16);
-
-        let dateFrom_12: Date = new Date();
-        dateFrom_12.setDate(today.getDate() + 18);
-        let dateUntil_12: Date = new Date();
-        dateUntil_12.setDate(today.getDate() + 19);
-
-        let dateFrom_13: Date = new Date();
-        dateFrom_13.setDate(today.getDate() + 20);
-        let dateUntil_13: Date = new Date();
-        dateUntil_13.setDate(today.getDate() + 20);
-
-        let dateFrom_14: Date = new Date();
-        dateFrom_14.setDate(today.getDate() + 20);
-        let dateUntil_14: Date = new Date();
-        dateUntil_14.setDate(today.getDate() + 22);
-
-        let dateFrom_15: Date = new Date();
-        dateFrom_15.setDate(today.getDate() + 22);
-        let dateUntil_15: Date = new Date();
-        dateUntil_15.setDate(today.getDate() + 23);
-
-        let dateFrom_16: Date = new Date();
-        dateFrom_16.setDate(today.getDate() + 24);
-        let dateUntil_16: Date = new Date();
-        dateUntil_16.setDate(today.getDate() + 27);
+        let date_01: Date = new Date();
+        date_01.setDate(today.getDate() - 4);
+        let date_02: Date = new Date();
+        date_02.setDate(today.getDate() - 3);
+        let date_03: Date = new Date();
+        date_03.setDate(today.getDate() - 1);
+        let date_04: Date = new Date();
+        date_04.setDate(today.getDate());
+        let date_05: Date = new Date();
+        date_05.setDate(today.getDate() + 2);
+        let date_06: Date = new Date();
+        date_06.setDate(today.getDate() + 3);
+        let date_07: Date = new Date();
+        date_07.setDate(today.getDate() + 5);
+        let date_08: Date = new Date();
+        date_08.setDate(today.getDate() + 6);
+        let date_09: Date = new Date();
+        date_09.setDate(today.getDate() + 8);
+        let date_10: Date = new Date();
+        date_10.setDate(today.getDate() + 11);
+        let date_11: Date = new Date();
+        date_11.setDate(today.getDate() + 12);
+        let date_12: Date = new Date();
+        date_12.setDate(today.getDate() + 13);
+        let date_13: Date = new Date();
+        date_13.setDate(today.getDate() + 15);
+        let date_14: Date = new Date();
+        date_14.setDate(today.getDate() + 17);
+        let date_15: Date = new Date();
+        date_15.setDate(today.getDate() + 18);
+        let date_16: Date = new Date();
+        date_16.setDate(today.getDate() + 21);
+        let date_17: Date = new Date();
+        date_17.setDate(today.getDate() + 23);
+        let date_18: Date = new Date();
+        date_18.setDate(today.getDate() + 25);
+        let date_19: Date = new Date();
+        date_19.setDate(today.getDate() + 27);
+        let date_20: Date = new Date();
+        date_20.setDate(today.getDate() + 31);
+        let date_21: Date = new Date();
+        date_21.setDate(today.getDate() + 33);
+        let date_22: Date = new Date();
+        date_22.setDate(today.getDate() + 33);
+        let date_23: Date = new Date();
+        date_23.setDate(today.getDate() + 35);
+        let date_24: Date = new Date();
+        date_24.setDate(today.getDate() + 36);
+        let date_25: Date = new Date();
+        date_25.setDate(today.getDate() + 40);
+        let date_26: Date = new Date();
+        date_26.setDate(today.getDate() + 43);
+        let date_27: Date = new Date();
+        date_27.setDate(today.getDate() + 45);
+        let date_28: Date = new Date();
+        date_28.setDate(today.getDate() + 48);
+        let date_29: Date = new Date();
+        date_29.setDate(today.getDate() + 51);
+        let date_30: Date = new Date();
+        date_30.setDate(today.getDate() + 56);
+        let date_31: Date = new Date();
+        date_31.setDate(today.getDate() + 58);
+        let date_32: Date = new Date();
+        date_32.setDate(today.getDate() + 61);
 
         let psc_01: PortStay = {
 
             scheduleId: 17539287,
             shipId: 1,
             shipName: "MS Ulrike",
-            timeOfArrival: dateFrom_01,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_01,//.toLocaleDateString(),
+            timeOfArrival: date_02,//.toLocaleDateString(),
+            timeOfDeparture: date_06,//.toLocaleDateString(),
             portName: "Dubai"
         }
 
@@ -116,38 +101,38 @@ export class PortStayMock implements PortStayServiceDefinition {
             scheduleId: 17539288,
             shipId: 1,
             shipName: "MS Ulrike",
-            timeOfArrival: dateFrom_02,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_02,//.toLocaleDateString(),
+            timeOfArrival: date_07,//.toLocaleDateString(),
+            timeOfDeparture: date_10,//.toLocaleDateString(),
             portName: "Shanghai"
         }
 
         let psc_03: PortStay = {
 
             scheduleId: 17522287,
-            shipId: 4,
-            shipName: "AIDA Aura",
-            timeOfArrival: dateFrom_03,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_03,//.toLocaleDateString(),
-            portName: "Tokyo"
+            shipId: 1,
+            shipName: "MS Ulrike",
+            timeOfArrival: date_11,//.toLocaleDateString(),
+            timeOfDeparture: date_14,//.toLocaleDateString(),
+            portName: "Christchurch"
         }
 
         let psc_04: PortStay = {
 
             scheduleId: 12739287,
-            shipId: 2,
-            shipName: "CCC Findus",
-            timeOfArrival: dateFrom_04,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_04,//.toLocaleDateString(),
+            shipId: 1,
+            shipName: "MS Ulrike",
+            timeOfArrival: date_18,//.toLocaleDateString(),
+            timeOfDeparture: date_21,//.toLocaleDateString(),
             portName: "Hamburg"
         }
 
         let psc_05: PortStay = {
 
             scheduleId: 67539287,
-            shipId: 4,
-            shipName: "AIDA Aura",
-            timeOfArrival: dateFrom_05,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_05,//.toLocaleDateString(),
+            shipId: 2,
+            shipName: "CCC Findus",
+            timeOfArrival: date_02,//.toLocaleDateString(),
+            timeOfDeparture: date_05,//.toLocaleDateString(),
             portName: "Miami"
         }
 
@@ -156,8 +141,8 @@ export class PortStayMock implements PortStayServiceDefinition {
             scheduleId: 17539587,
             shipId: 2,
             shipName: "CCC Findus",
-            timeOfArrival: dateFrom_06,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_06,//.toLocaleDateString(),
+            timeOfArrival: date_06,//.toLocaleDateString(),
+            timeOfDeparture: date_08,//.toLocaleDateString(),
             portName: "Dubai"
         }
 
@@ -166,8 +151,8 @@ export class PortStayMock implements PortStayServiceDefinition {
             scheduleId: 17539688,
             shipId: 2,
             shipName: "CCC Findus",
-            timeOfArrival: dateFrom_07,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_07,//.toLocaleDateString(),
+            timeOfArrival: date_10,//.toLocaleDateString(),
+            timeOfDeparture: date_12,//.toLocaleDateString(),
             portName: "Shanghai"
         }
 
@@ -176,8 +161,8 @@ export class PortStayMock implements PortStayServiceDefinition {
             scheduleId: 17522787,
             shipId: 2,
             shipName: "CCC Findus",
-            timeOfArrival: dateFrom_08,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_08,//.toLocaleDateString(),
+            timeOfArrival: date_13,//.toLocaleDateString(),
+            timeOfDeparture: date_15,//.toLocaleDateString(),
             portName: "New York"
         }
 
@@ -186,38 +171,38 @@ export class PortStayMock implements PortStayServiceDefinition {
             scheduleId: 12039287,
             shipId: 4,
             shipName: "AIDA Aura",
-            timeOfArrival: dateFrom_09,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_09,//.toLocaleDateString(),
+            timeOfArrival: date_03,//.toLocaleDateString(),
+            timeOfDeparture: date_04,//.toLocaleDateString(),
             portName: "Hamburg"
         }
 
         let psc_10: PortStay = {
 
             scheduleId: 67539280,
-            shipId: 2,
-            shipName: "CCC Findus",
-            timeOfArrival: dateFrom_10,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_10,//.toLocaleDateString(),
+            shipId: 4,
+            shipName: "AIDA Aura",
+            timeOfArrival: date_05,//.toLocaleDateString(),
+            timeOfDeparture: date_07,//.toLocaleDateString(),
             portName: "Lissabon"
         }
 
         let psc_11: PortStay = {
 
             scheduleId: 12739207,
-            shipId: 8,
-            shipName: "CruiseShip Galactica",
-            timeOfArrival: dateFrom_11,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_11,//.toLocaleDateString(),
+            shipId: 4,
+            shipName: "AIDA Aura",
+            timeOfArrival: date_13,//.toLocaleDateString(),
+            timeOfDeparture: date_21,//.toLocaleDateString(),
             portName: "Hamburg"
         }
 
         let psc_12: PortStay = {
 
             scheduleId: 74242287,
-            shipId: 1,
-            shipName: "MS Ulrike",
-            timeOfArrival: dateFrom_12,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_12,//.toLocaleDateString(),
+            shipId: 4,
+            shipName: "AIDA Aura",
+            timeOfArrival: date_25,//.toLocaleDateString(),
+            timeOfDeparture: date_26,//.toLocaleDateString(),
             portName: "Port Victoria"
         }
 
@@ -226,29 +211,29 @@ export class PortStayMock implements PortStayServiceDefinition {
             scheduleId: 12739207,
             shipId: 8,
             shipName: "CruiseShip Galactica",
-            timeOfArrival: dateFrom_13,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_13,//.toLocaleDateString(),
+            timeOfArrival: date_06,//.toLocaleDateString(),
+            timeOfDeparture: date_08,//.toLocaleDateString(),
             portName: "Vancouver"
         }
 
         let psc_14: PortStay = {
 
             scheduleId: 74244587,
-            shipId: 5,
-            shipName: "AIDA  Amar",
-            timeOfArrival: dateFrom_14,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_14,//.toLocaleDateString(),
+            shipId: 8,
+            shipName: "CruiseShip Galactica",
+            timeOfArrival: date_09,//.toLocaleDateString(),
+            timeOfDeparture: date_11,//.toLocaleDateString(),
             portName: "Jebel Ali"
         }
 
         let psc_15: PortStay = {
 
             scheduleId: 12747207,
-            shipId: 1,
-            shipName: "MS Ulrike",
-            timeOfArrival: dateFrom_16,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_16,//.toLocaleDateString(),
-            portName: "Christchurch"
+            shipId: 5,
+            shipName: "AIDA  Amar",
+            timeOfArrival: date_03,//.toLocaleDateString(),
+            timeOfDeparture: date_07,//.toLocaleDateString(),
+            portName: "Capetown"
         }
 
         let psc_16: PortStay = {
@@ -256,9 +241,39 @@ export class PortStayMock implements PortStayServiceDefinition {
             scheduleId: 74248787,
             shipId: 5,
             shipName: "AIDA  Amar",
-            timeOfArrival: dateFrom_16,//.toLocaleDateString(),
-            timeOfDeparture: dateUntil_16,//.toLocaleDateString(),
+            timeOfArrival: date_13,//.toLocaleDateString(),
+            timeOfDeparture: date_19,//.toLocaleDateString(),
             portName: "Dubai"
+        }
+
+        let psc_17: PortStay = {
+
+            scheduleId: 74248713,
+            shipId: 3,
+            shipName: "Isana 2",
+            timeOfArrival: date_20,//.toLocaleDateString(),
+            timeOfDeparture: date_23,//.toLocaleDateString(),
+            portName: "Tokyo"
+        }
+
+        let psc_18: PortStay = {
+
+            scheduleId: 74248714,
+            shipId: 6,
+            shipName: "MEARSC Harrington",
+            timeOfArrival: date_20,//.toLocaleDateString(),
+            timeOfDeparture: date_23,//.toLocaleDateString(),
+            portName: "Capetown"
+        }
+
+        let psc_19: PortStay = {
+
+            scheduleId: 74248715,
+            shipId: 7,
+            shipName: "MEARSC Luna",
+            timeOfArrival: date_20,//.toLocaleDateString(),
+            timeOfDeparture: date_23,//.toLocaleDateString(),
+            portName: "Stockholm"
         }
 
         return this.portStays.clear().then(async () => {
@@ -279,6 +294,9 @@ export class PortStayMock implements PortStayServiceDefinition {
             await this.portStays.setItem(psc_14.scheduleId.toString(), psc_14);
             await this.portStays.setItem(psc_15.scheduleId.toString(), psc_15);
             await this.portStays.setItem(psc_16.scheduleId.toString(), psc_16);
+            await this.portStays.setItem(psc_17.scheduleId.toString(), psc_17);
+            await this.portStays.setItem(psc_18.scheduleId.toString(), psc_18);
+            await this.portStays.setItem(psc_19.scheduleId.toString(), psc_19);
         });
     }    
     

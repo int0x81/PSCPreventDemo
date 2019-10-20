@@ -34,11 +34,11 @@ export class ShipMock implements ShipServiceDefinition {
             image: ""
         }
 
-        // let ship_03: Ship = {
-        //     id: 3,
-        //     name: "ZEA Kurt",
-        //     image: ""
-        // }
+        let ship_03: Ship = {
+            id: 3,
+            name: "Isana 2",
+            image: ""
+        }
 
         let ship_04: Ship = {
             id: 4,
@@ -48,21 +48,21 @@ export class ShipMock implements ShipServiceDefinition {
 
         let ship_05: Ship = {
             id: 5,
-            name: "AIDA  Amar",
+            name: "AIDA Amar",
             image: ""
         }
 
-        // let ship_06: Ship = {
-        //     id: 6,
-        //     name: "ZEA Bremen",
-        //     image: ""
-        // }
+        let ship_06: Ship = {
+            id: 6,
+            name: "MEARSC Harrington",
+            image: ""
+        }
 
-        // let ship_07: Ship = {
-        //     id: 7,
-        //     name: "AIDA Luna",
-        //     image: ""
-        // }
+        let ship_07: Ship = {
+            id: 7,
+            name: "MEARSC Luna",
+            image: ""
+        }
 
         let ship_08: Ship = {
             id: 8,
@@ -72,11 +72,11 @@ export class ShipMock implements ShipServiceDefinition {
 
         await this.ships.setItem(ship_01.id.toString(), ship_01);
         await this.ships.setItem(ship_02.id.toString(), ship_02);
-        // await this.ships.setItem(ship_03.id.toString(), ship_03);
+        await this.ships.setItem(ship_03.id.toString(), ship_03);
         await this.ships.setItem(ship_04.id.toString(), ship_04);
         await this.ships.setItem(ship_05.id.toString(), ship_05);
-        // await this.ships.setItem(ship_06.id.toString(), ship_06);
-        // await this.ships.setItem(ship_07.id.toString(), ship_07);
+        await this.ships.setItem(ship_06.id.toString(), ship_06);
+        await this.ships.setItem(ship_07.id.toString(), ship_07);
         await this.ships.setItem(ship_08.id.toString(), ship_08);
         
         return new Promise((resolve, reject) => {

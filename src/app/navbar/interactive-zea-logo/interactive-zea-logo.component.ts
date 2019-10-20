@@ -120,8 +120,8 @@ export class InteractiveZeaLogoComponent implements AfterViewInit {
       this.companyLogo.style.transition = "all 0.2s";
       this.companyLogo.style.transitionTimingFunction = cubicBezier;
 
-      //needed to mobile optimization
-      this.transformLogoToOriginalState();
+      if(!this.mouseOverLogo)
+        this.transformLogoToOriginalState();
     }
 
     this.isLogoFlipped = !this.isLogoFlipped;
