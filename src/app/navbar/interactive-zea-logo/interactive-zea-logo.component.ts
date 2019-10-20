@@ -107,7 +107,7 @@ export class InteractiveZeaLogoComponent implements AfterViewInit {
     });
   }
 
-  private onCompanyLogoClick() {
+  onCompanyLogoClick() {
 
     let cubicBezier: string = "cubic-bezier(0, .95, .13, 1.03)";
 
