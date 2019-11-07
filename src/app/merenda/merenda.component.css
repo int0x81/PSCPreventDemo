@@ -6,3 +6,11 @@
     color: #ffffff;
     opacity: 0.8;
 }
+
+.info-element {
+    border-radius: 10px;
+}
+
+.bg-darktheme-dp-1 {
+    background-color: #252525;
+}

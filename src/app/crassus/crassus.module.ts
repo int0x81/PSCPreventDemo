@@ -28,7 +28,8 @@ import { StatusIconComponent } from './predict-info/status-icon/status-icon.comp
         CrassusRoutingModule
     ],
     entryComponents: [],
-    providers: [CrassusMock],
+    providers: [CrassusMock 
+      ],
     bootstrap: []
   })
   export class CrassusModule { }

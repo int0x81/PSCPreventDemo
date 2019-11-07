@@ -59,8 +59,10 @@ import { MerendaModule } from './merenda/merenda.module';
   ],
   entryComponents: [MlModelCardComponent, InfoModalComponent, StartupInfoModalComponent],
   providers: [
+    PortStayService,
     PortStayMock, 
     MLModelService,
+    ShipService,
     ShipMock,
     GlobalEventService, 
     DarkModeService],

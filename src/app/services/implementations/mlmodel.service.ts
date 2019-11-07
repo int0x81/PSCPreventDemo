@@ -17,15 +17,15 @@ export class MLModelService implements MLModelServiceDefinition {
             created: new Date("2019-10-05"),
             name: 'Merenda',
             status: "development",
-            description: "Provides you with a set of machine-learning-based clustering operations",
+            description: "K means for Port State Controls. Requires basic knowledge in Data Science!",
             class: "Clustering",
-            technology: "Not set yet", //TODO
+            technology: "K means",
             selected: false
         },
         {
             created: new Date('2019-10-27'),
             name: 'Atratinus',
-            status: "dark mode only",
+            status: "",
             description: "States a risk factor for each port. Higher bars means higher risk of a PSC beeing performed.",
             class: "Data Visualization",
             technology: "Googles WebGL Globe",

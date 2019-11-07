@@ -1,3 +1,8 @@
-<div class="d-flex justify-content-center align-items-center" style="height: 93.4vh;">
-    <h1 [ngClass]="darkMode ? 'text-darktheme' : 'text-classictheme'">Beeing developed</h1>
+<div class="d-flex flex-column justify-content-center align-items-stretch" style="height: 93.4vh;">
+    <div style="flex-grow: 4;" class="info-element shadow ml-4 mt-4 mr-4 mb-3">
+        <app-merenda-chart></app-merenda-chart>
+    </div>
+    <div style="flex-grow: 1;" class="info-element shadow ml-4 mt-4 mr-4 mb-3">
+        <app-merenda-options-bar></app-merenda-options-bar>
+    </div>
 </div>

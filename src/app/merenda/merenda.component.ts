@@ -25,4 +25,4 @@ import { DarkModeService } from '../services/implementations/darkmode.service';
     ngOnDestroy() {
       this.darkModeSubscription.unsubscribe();
     }
-  }  
+}  

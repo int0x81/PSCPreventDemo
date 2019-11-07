@@ -3,6 +3,7 @@ import { CrassusMock } from '../../services/crassus.service.mock';
 import { CrassusServiceDefinition } from '../../services/crassus.service.def';
 import { CrassusResult } from '../../models/crassusresult';
 import { Subscription } from 'rxjs';
+import { CrassusService } from '../../services/crassus.service';
 
 @Component({
   selector: 'app-status-icon',

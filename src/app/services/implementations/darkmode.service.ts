@@ -28,6 +28,6 @@ export class DarkModeService {
      * Ascertains which theme to use on start up
      */
     private ascertainDarkMode(): boolean {
-        return true;
+        return false;
     }
 }

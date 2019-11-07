@@ -29,7 +29,7 @@ export class PortStayTableComponent implements OnInit, OnDestroy {
 
   tableEntries: PortStayTableEntry[] = new Array<PortStayTableEntry>();
 
-  constructor(portStayServiceImpl: PortStayMock, predictionImpl: CrassusMock, private darkModeService: DarkModeService) { 
+  constructor(portStayServiceImpl: PortStayService, predictionImpl: CrassusMock, private darkModeService: DarkModeService) { 
 
     this.portStayService = portStayServiceImpl;
     this.crassusService = predictionImpl;

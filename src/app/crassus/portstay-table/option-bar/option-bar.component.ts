@@ -9,6 +9,7 @@ import { FormControl } from '@angular/forms';
 import { DarkModeService } from 'src/app/services/implementations/darkmode.service';
 import { CrassusServiceDefinition } from '../../services/crassus.service.def';
 import { CrassusMock } from '../../services/crassus.service.mock';
+import { CrassusService } from '../../services/crassus.service';
 
 @Component({
   selector: 'app-option-bar',
