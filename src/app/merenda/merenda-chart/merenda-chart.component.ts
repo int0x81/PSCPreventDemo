@@ -15,6 +15,10 @@ export class MerendaChartComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     
     let canvas = document.getElementById("kmeanschart") as HTMLCanvasElement;
+    let wrapper = document.getElementById("chartwrapper") as HTMLDivElement;
+    //wrapper.style.maxWidth = wrapper.clientWidth.toString();
+    canvas.width = wrapper.clientWidth - 200;
+    canvas.height = Math.round(wrapper.clientWidth / 3);
 
     const k0_range = 40;
     const k0_start_x = 5;
@@ -393,10 +397,12 @@ export class MerendaChartComponent implements OnInit, AfterViewInit {
                 zeroLineWidth: 2
               }
             }]
-        }
+        },
+        responsive: true,
+        maintainAspectRatio: false
       }
     }
     
-    let chart = new Chart(canvas, options);
+    new Chart(canvas, options);
   }
 }

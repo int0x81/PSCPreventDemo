@@ -1,3 +1,25 @@
-<p>
-  merenda-options-bar works!
-</p>
+<div style="display: flex; justify-content: space-between; height: 240px; padding: 10px;">
+  <div class="selection-wrapper">
+    <h5 [ngClass]="darkTheme ? 'text-darktheme-dp-1' : 'text-muted'">X-Axis</h5>
+    <div [ngClass]="[darkTheme ? 'selector-dark-theme' : 'selector-classic-theme', xSelectorCollapsed ? 'selector-collapsed' : 'selector-expanded']" class="selector">
+      <ul class="list-unstyled">
+        <li *ngFor="let item of xAxisItems" (click)="onXSelectorClick(item)">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="selection-wrapper">
+    <h5 [ngClass]="darkTheme ? 'text-darktheme-dp-1' : 'text-muted'">Y-Axis</h5>
+    <div [ngClass]="[darkTheme ? 'selector-dark-theme' : 'selector-classic-theme', ySelectorCollapsed ? 'selector-collapsed' : 'selector-expanded']" class="selector">
+      <ul class="list-unstyled">
+        <li *ngFor="let item of yAxisItems" (click)="onYSelectorClick(item)">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="selection-wrapper">
+    <h5 [ngClass]="darkTheme ? 'text-darktheme-dp-1' : 'text-muted'">Number of K</h5>
+    <div>
+      <input type="range" class="custom-range" min="1" max="10" value="1" [value]="selectedK" (input)="sliderUpdate($event.target.value)">
+      <p [ngClass]="darkTheme ? 'text-darktheme-dp-1' : 'text-muted'">{{selectedK}}</p>
+    </div>
+  </div>
+</div>
