@@ -28,6 +28,7 @@ import { PortStayMock } from './services/mocks/portstay.service.mock';
 import { StartupInfoModalComponent } from './startup-info-modal/startup-info-modal.component';
 import { AtratinusModule } from './atratinus/atratinus.module';
 import { MerendaModule } from './merenda/merenda.module';
+import { SingleSelectComponent } from './reuseable/single-select/single-select.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,8 @@ import { MerendaModule } from './merenda/merenda.module';
     MlModelDirective,
 
     StartupInfoModalComponent,
+
+    SingleSelectComponent,
 
     
   ],
