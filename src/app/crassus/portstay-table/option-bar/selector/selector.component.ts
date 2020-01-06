@@ -34,7 +34,7 @@ export class SelectorComponent implements OnInit, OnDestroy {
     image: ""
 }
 
-  constructor(shipServiveImpl: ShipService, darkThemeService: DarkModeService, crassusServiceImpl: CrassusMock) {
+  constructor(shipServiveImpl: ShipMock, darkThemeService: DarkModeService, crassusServiceImpl: CrassusMock) {
     this.darkTheme = darkThemeService.getDarkModeState();
     this. darkThemeSubscription = darkThemeService.darkModeSubject.subscribe(() => this.darkTheme = !this.darkTheme);
     this.shipService = shipServiveImpl;

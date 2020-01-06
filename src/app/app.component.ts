@@ -26,17 +26,15 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.darkMode = darkModeService.getDarkModeState();
 
-    this.blurApp = false;
+    this.blurApp = true;
 
     this.showStartupInfoSubscription = globalEventService.hideStartupInfoSubject.subscribe(() => this.blurApp = false);
   }
 
-  ngOnInit() {
-    
-  }
+  ngOnInit() { }
 
   ngAfterViewInit() {
-    //this.modalService.open(StartupInfoModalComponent);
+    this.modalService.open(StartupInfoModalComponent);
   }
 
   ngOnDestroy() {
